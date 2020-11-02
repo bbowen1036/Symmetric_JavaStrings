@@ -1,0 +1,30 @@
+{
+  "name": "Symmetric_JavaStrings",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --mode=development --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbowen1036/Symmetric_JavaStrings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbowen1036/Symmetric_JavaStrings/issues"
+  },
+  "homepage": "https://github.com/bbowen1036/Symmetric_JavaStrings#readme",
+  "devDependencies": {
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "@eastdesire/jscolor": "^2.3.3"
+  }
+}

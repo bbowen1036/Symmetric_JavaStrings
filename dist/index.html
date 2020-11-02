@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symmetric JavaStrings</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="../assets/style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../assets/sidebar.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../assets/splash.css">
+
+  <script src="./bundle.js"> </script>
+  <script src="../lib/jscolor.js"></script>
+
+</head>
+
+
+<body>
+  <div class="welcome"> 
+    <div class="header">
+            <h2>Welcome to</h2>
+            <h1>Symmetric JavaStrings</h1>
+    </div>
+    <div class="instructions">
+            <p> Click the canvas to </p>
+            <p> begin! </p>
+    </div>
+
+  </div>
+
+  <section class="selector-bar" id="hide-me">
+
+      <div class="inputs-container show" id="hideable-inputs">
+        
+        <div class="color-selectors">
+          <button
+              data-jscolor="{valueElement:null, value:'ffffff'}"
+              id="pen-color" > <i class="fas fa-paint-brush"></i></button>
+          <label>
+            Stylus Color
+          </label>    
+          <button
+            data-jscolor="{valueElement:null, value:'061720', onInput:'handleBackground(this)'}"
+            id="background-color" ><i class="fas fa-image"></i></button>
+          <label>
+            Backround Color
+          </label><br>     
+        </div>
+
+          <label>
+              Pen Size
+          </label>
+              <input type="range" id="pen-width" 
+                  min="1" max="10"
+                  value = "2"/>
+          <label>
+              Divisions
+          </label>
+          <input type="range" id="divisions" 
+                      min="1" max="100"
+                      value = "40"/> 
+          <div class="mirror">
+                  Mirror Mode 
+                  <label class="switch">
+                          <input type="checkbox" id="mirror">
+                          <span class="slider round" onclick="handleSlider(`mirror`)" id="mirror-slider"></span>
+                  </label>
+          </div>
+  
+          <button id="clear">
+             Clear
+          </button>
+
+          <div class="links">
+          
+                  <a href="https://www.linkedin.com/in/brian-bowen-36456a7/" id="linkedin">
+                    <img 
+                      class="fab fa-linkedin"
+                      src="https://oceanstar-seed.s3-us-west-1.amazonaws.com/linkedin-logo-transparent.png" alt=""
+                      >
+                  </a>
+                  <a href="https://github.com/bbowen1036" id="git">
+                      <i class="fab fa-github"></i><img src="https://oceanstar-seed.s3-us-west-1.amazonaws.com/gitlogo.jpg" alt=""></a>
+                  </a>
+                  <a href="" id="angellist">
+                      <i class="fab fa-angellist"></i></a>
+  
+          </div>
+          <button id="close-sidebar" class="hide-button" ><i class="fas fa-times">close</i></button>
+  
+      </div>
+
+
+
+  </section>
+
+  <div class="canvas-container" >
+    <canvas id="canvas"></canvas>
+  </div>
+
+</body>
+</html>

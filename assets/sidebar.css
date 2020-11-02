@@ -1,0 +1,45 @@
+.selector-bar {
+  border: 2px solid red;
+  position: absolute;
+  padding-right: 23px;
+  padding-left: 23px;
+  z-index: 4;
+  margin: 0;
+  width: 15%;
+  min-width: 210px;;
+  background: rgba(244, 245, 248, 0.75);
+  height: 100%;
+  font-size: 1em;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.color-selectors{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.links img {
+  height: 50px;
+}
+
+#git img {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.inputs #close-sidebar{
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+
+
