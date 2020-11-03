@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../assets/sidebar.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../assets/splash.css">
+  <script src="https://kit.fontawesome.com/a1396e8313.js" crossorigin="anonymous"></script>
 
   <script src="./bundle.js"> </script>
   <script src="../lib/jscolor.js"></script>
@@ -15,11 +16,22 @@
 
 
 <body>
-  <div class="welcome"> 
+  <div class="navbar"> 
+
+    <span class="open-slide" id="open-sidebar">
+      <a href="#" >
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
     <div class="header">
-            <h2>Welcome to</h2>
             <h1>Symmetric JavaStrings</h1>
     </div>
+
     <div class="instructions">
             <p> Click the canvas to </p>
             <p> begin! </p>
@@ -85,8 +97,8 @@
                       <i class="fab fa-angellist"></i></a>
   
           </div>
-          <button id="close-sidebar" class="hide-button" ><i class="fas fa-times">close</i></button>
-  
+          <button id="close-sidebar" class="hide-button"  ><i class="fas fa-times"></i></button>
+          <div><i class="fas fa-toolbox"></i></div>
       </div>
 
 

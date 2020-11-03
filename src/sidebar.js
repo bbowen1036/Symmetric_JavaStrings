@@ -1,25 +1,28 @@
+
 export const SidebarMenu = () => {
-  let openButton = document.getElementById("close-sidebar");
+  let closeBtn = document.getElementById("close-sidebar");
+  let openBtn = document.getElementById('open-sidebar');
 
-  openButton.onclick = () =>{
-    document.getElementById("hideable-inputs").classList.toggle("show");
-    openButton.classList.toggle("show");
-    console.log('ive been clicked');
+  
+  openBtn.onclick = () => {
+    let canvas = document.getElementById('canvas');
+    let sidebar = document.getElementById('hide-me');
+    
+    sidebar.style.width = '250px'
+    sidebar.style.padding = '23px'
+    
+    canvas.style.marginLeft = "250px"
   }
+
+  closeBtn.onclick = () => {
+    let canvas = document.getElementById('canvas');
+    let sidebar = document.getElementById('hide-me');
+    
+    sidebar.style.width = '0'
+    sidebar.style.padding = '0'
+
+    canvas.style.marginLeft = "0"
+  }
+
+  
 };
-
-// export const inputMenu = () => {
-//   let openButton = document.getElementById("open-inputs")
-//   openButton.onclick = () =>{
-//       document.getElementById("hideable-inputs").classList.toggle("show");
-//       openButton.classList.toggle("show");
-//   }
-//  let closeButton = document.getElementById("close-inputs");
-//  closeButton.onclick = () => {
-//   document.getElementById("hideable-inputs").classList.toggle("show");
-//   openButton.classList.toggle("show");
-//  }
-
-// }
-
-
