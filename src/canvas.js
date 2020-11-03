@@ -3,10 +3,13 @@ class Canvas {
     this.canvas = document.getElementById("canvas");
     this.clear = document.getElementById("clear")      //clear button
     this.color = document.getElementById('stylus-color')  // drawing color
+    this.bgColor = document.getElementById('background-color');
+
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
     
     this.ctx = this.canvas.getContext("2d");
+ 
 
     this.colorChoice = this.color.jscolor;
     this.width = this.canvas.width;
@@ -22,6 +25,9 @@ class Canvas {
     this.clear.onclick = this.handleClear.bind(this);   //clear the screen
 
     this.color.onclick = this.colorSelect.bind(this);
+
+    this.bgColorChoice = this.bgColor.jscolor;
+    this.bgColor.onclick = this.bgColorSelect.bind(this);
   }
 
   drawLine(startX = this.startX, startY = this.startY, endX= this.endX, endY = this.endY){
@@ -30,6 +36,7 @@ class Canvas {
     this.ctx.lineWidth = 3;
     this.ctx.strokeStyle = this.colorChoice;
     this.ctx.lineCap = "round";
+    
     
     this.ctx.moveTo(startX , startY );  
     this.ctx.lineTo(endX, endY);
@@ -48,7 +55,8 @@ class Canvas {
   handleDown(e) {
     this.getCoordinates(e);
     this.draw = true;
-    console.log(e)
+    this.canvas.style.backgroundColor = this.bgColor.jscolor
+
   }
 
   handleClear() {
@@ -66,7 +74,12 @@ class Canvas {
 }
 
 colorSelect() {
+  console.log(this.colorChoice)
   this.colorChoice = this.color.jscolor
+}
+
+bgColorSelect() {
+  this.bgColorChoice = this.bgColor.jscolor
 }
 
 };

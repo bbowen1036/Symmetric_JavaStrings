@@ -9,8 +9,9 @@ body {
 }
 
 canvas {
-  touch-action: none;
-  background-color: #fff;
+  /* touch-action: none; */
+  /* background-color: #fff; */
+  cursor: crosshair;
   /* position: absolute; */
   /* top: 0;
   left: 0; */
