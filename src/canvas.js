@@ -17,7 +17,7 @@ class Canvas {
     this.bgColorChoice = this.bgColor.jscolor;
     this.width = this.canvas.width;
     this.height = this.canvas.height;
-    [this.startX, this.startY] = [this.width/ 2, this.height/ 2 - 100]; //initializing coordinates
+    [this.startX, this.startY] = [this.width/ 2, this.height/ 2 ]; //initializing coordinates
     [this.endX, this.endY] = [this.width/ 2, this.height/ 2];
     this.draw = false;
 
