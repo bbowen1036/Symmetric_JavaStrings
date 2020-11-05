@@ -118,6 +118,7 @@ There are 2 drawing modes.
   }
 ```
 
-
+## Wireframe
+![screenshot](assets/img/wireframe.png)
 
 
