@@ -14,7 +14,11 @@ Lines are a fundamental element of design. In drawing, they are the main tool of
 
 ## Technologies
 <a href="#"><img src="assets/img/html.png" height="85px"></a>
-<img src="assets/img/html.png" height="85px"> <img src="assets/img/node-js-icon-11.jpg" height="85px"> <img src="assets/img/css.png" height="85px"> <img src="assets/img/js.png" height="85px"> <img src="assets/img/canvas.png" height="85px">
+<a href="#"><img src="assets/img/node-js-icon-11.jpg" height="85px"></a>
+<a href="#"><img src="assets/img/css.png" height="85px"></a>
+<a href="#"><img src="assets/img/js.png" height="85px"></a>
+<a href="#"><img src="assets/img/canvas.png" height="85px"></a>
+   
   
 ## Implementation 
 
