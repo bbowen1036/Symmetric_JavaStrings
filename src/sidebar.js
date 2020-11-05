@@ -23,6 +23,4 @@ export const SidebarMenu = () => {
 
     canvas.style.marginLeft = "0"
   }
-
-  
 };

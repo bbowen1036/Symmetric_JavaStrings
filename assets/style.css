@@ -8,20 +8,14 @@ body {
   text-align: center;
   display: block;
   overflow: hidden;
-  z-index: 0;
   margin: 0;
   height: 100%;
   padding: 0;
+  background: black;
 }
 
 canvas {
-  /* touch-action: none; */
-  /* background-color: #fff; */
   cursor: crosshair;
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
-  /* background-color: #061720; */
 }
 
 
@@ -35,9 +29,37 @@ button {
   background: none;
   border: 1px solid black;
   border-radius: 5px;
-  color: black;
-  font-size: 1em;
+	border: 1px solid hsl(var(--primary));  font-size: 1em;
   overflow: hidden;
 }
 
+
+.navbar {
+  position: relative;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  
+}
+
+.navbar-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
 

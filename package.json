@@ -25,6 +25,7 @@
     "webpack-cli": "^4.1.0"
   },
   "dependencies": {
-    "@eastdesire/jscolor": "^2.3.3"
+    "@eastdesire/jscolor": "^2.3.3",
+    "file-saver": "^2.0.2"
   }
 }
