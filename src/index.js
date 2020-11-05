@@ -18,6 +18,4 @@ document.addEventListener("DOMContentLoaded", function(){
   wackyHeader()
   SidebarMenu();
   const canvas = new Canvas();
-
-  
 });

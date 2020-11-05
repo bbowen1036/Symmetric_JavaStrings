@@ -1,39 +1,37 @@
 :root {
 	--primary: 0, 0%, 100%;
 	--secondary: 202, 73%, 28%;
-	--c: cubic-bezier(1,.49,.16,.96);
 }
 
-
-
 .selector-bar {
-  border: 2px solid red;
   position: fixed;
-
   margin: 0;
-  
   left: 0;
-  top: 0;
-  padding-top: 190px;
-  z-index: 4;
-  /* width: 15%; */
-  /* min-width: 210px;; */
+  top: 122px;
   height: 100%;
   width: 0;
   font-size: 1em;
   overflow-x: hidden;
   transition: 0.7s;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);	
+  background: #212529;
+  color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .inputs-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; 
+}
+
+.inputs-container label {
+  margin-top: 9px;
+  margin-bottom: 10px;
 }
 
 .color-selectors{
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -42,6 +40,16 @@
 
 .links img {
   height: 50px;
+ 
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.background {
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(100, 100, 100, 0.7);
 }
 
 #git img {
@@ -55,7 +63,64 @@
   right:0;
 }
 
+input {
+  cursor: pointer;
+}
+
 canvas {
   transition:margin-left 0.7s;
 }
 
+.hamburguer-menu {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  top: 13px;
+  left: 20px;
+  position: absolute;
+  z-index: 100;
+  color: white;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  width: 30px;
+  background: #fff;
+  height: 2px;
+  margin: 5px 5px;
+  transition: all 0.4s ease;
+  z-index: 100;
+}
+
+
+.change .first-line {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+
+.change .second-line {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+.sunflower {
+  font-size: 19px;
+  margin-right: 6px;
+}
+
+#divisions {
+  width: 100%;
+}
+
+.clear-btn {
+  padding-top: 8px;
+  border-top: 2px solid rgba(100, 100, 100, 0.7);
+  margin-bottom: 80px;
+}
+
+#sunflower-options {
+  margin-bottom: 18px;
+}

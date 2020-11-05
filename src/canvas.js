@@ -5,8 +5,9 @@ class Canvas {
     this.color = document.getElementById('stylus-color');  // drawing color
     this.bgColor = document.getElementById('background-color');
     this.penWidth = document.getElementById('pen-width');
-    this.spiro = document.getElementById('spiro')
-    this.slicer = document.getElementById('divisions')
+    this.spiro = document.getElementById('spiro');
+    this.slicer = document.getElementById('divisions');
+
 
     this.canvas.width = window.innerWidth - 250;
     this.canvas.height = window.innerHeight - 100;
@@ -67,8 +68,6 @@ class Canvas {
     
     if (this.spiroClick()) {
       let sliced = this.sliceCount()
-      console.log(sliced)
-
       for(let i = 2; i <= sliced ; i++) {
         this._start += 360 / sliced;
         let rP = this.rotate({x: startX, y: startY}, this.center, this._start);

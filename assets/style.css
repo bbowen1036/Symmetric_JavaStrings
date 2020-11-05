@@ -31,6 +31,7 @@ button {
   border-radius: 5px;
 	border: 1px solid hsl(var(--primary));  font-size: 1em;
   overflow: hidden;
+  color: whitesmoke;
 }
 
 
@@ -62,4 +63,5 @@ button {
   justify-content: space-between;
   z-index: 2;
 }
+
 

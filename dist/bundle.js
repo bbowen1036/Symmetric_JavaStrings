@@ -40,8 +40,9 @@ class Canvas {
     this.color = document.getElementById('stylus-color');  // drawing color
     this.bgColor = document.getElementById('background-color');
     this.penWidth = document.getElementById('pen-width');
-    this.spiro = document.getElementById('spiro')
-    this.slicer = document.getElementById('divisions')
+    this.spiro = document.getElementById('spiro');
+    this.slicer = document.getElementById('divisions');
+
 
     this.canvas.width = window.innerWidth - 250;
     this.canvas.height = window.innerHeight - 100;
@@ -102,8 +103,6 @@ class Canvas {
     
     if (this.spiroClick()) {
       let sliced = this.sliceCount()
-      console.log(sliced)
-
       for(let i = 2; i <= sliced ; i++) {
         this._start += 360 / sliced;
         let rP = this.rotate({x: startX, y: startY}, this.center, this._start);
@@ -283,8 +282,6 @@ document.addEventListener("DOMContentLoaded", function(){
   ;(0,_wacky_header__WEBPACK_IMPORTED_MODULE_1__.wackyHeader)()
   ;(0,_sidebar__WEBPACK_IMPORTED_MODULE_0__.SidebarMenu)();
   const canvas = new _canvas__WEBPACK_IMPORTED_MODULE_3__.default();
-
-  
 });
 
 /***/ }),
@@ -306,28 +303,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 
 const SidebarMenu = () => {
-  let closeBtn = document.getElementById("close-sidebar");
   let openBtn = document.getElementById('open-sidebar');
-
+  let sunflowerMode = document.getElementById('spiro')
   
+  
+  sunflowerMode.onclick = () => {
+    let options = document.getElementById('sunflower-options')
+
+    if (sunflowerMode.checked) {
+      options.style.display = 'block'
+    } else {
+      options.style.display = 'none'
+    }
+  }
+
   openBtn.onclick = () => {
     let canvas = document.getElementById('canvas');
     let sidebar = document.getElementById('hide-me');
-    
-    sidebar.style.width = '250px'
-    sidebar.style.padding = '23px'
-    
-    canvas.style.marginLeft = "250px"
-  }
 
-  closeBtn.onclick = () => {
-    let canvas = document.getElementById('canvas');
-    let sidebar = document.getElementById('hide-me');
+    openBtn.classList.toggle("change");
+    sidebar.classList.toggle('open')
     
-    sidebar.style.width = '0'
-    sidebar.style.padding = '0'
+    if ('selector-bar open' === sidebar.classList.value) {
+      
+      sidebar.style.width = '250px'
+      sidebar.style.padding = '23px'
+      canvas.style.marginLeft = "250px"
 
-    canvas.style.marginLeft = "0"
+    } else {
+      sidebar.style.width = '0'
+      sidebar.style.padding = '0'
+      canvas.style.marginLeft = "0"
+    }
   }
 };
 
