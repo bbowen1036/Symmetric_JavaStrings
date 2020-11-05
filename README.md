@@ -14,8 +14,8 @@ A browser based drawing application, allowing users to create fun and unsual sym
 
 ## Technologies
 
-<img src="assets/img/html.png" height="55px">
-<img src="assets/img/node-js-icon-11.jpg" height="50px">
+<img src="assets/img/html.png" height="55px"> <img src="assets/img/node-js-icon-11.jpg" height="50px">
+
 <img src="assets/img/css.png" height="55px">
 <img src="assets/img/js.png" height="55px">
 <img src="assets/img/canvas.png" height="55px">
