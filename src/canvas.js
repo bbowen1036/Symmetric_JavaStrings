@@ -1,15 +1,15 @@
 class Canvas {
   constructor() {
-    this.canvas = document.getElementById("canvas");
-    this.clear = document.getElementById("clear");      //clear button
-    this.color = document.getElementById('stylus-color');  // drawing color
-    this.bgColor = document.getElementById('background-color');
-    this.penWidth = document.getElementById('pen-width');
-    this.spiro = document.getElementById('spiro');
-    this.slicer = document.getElementById('divisions');
+    this.canvas = document.getElementById("canvas");           // canvas element
+    this.clear = document.getElementById("clear");             // clear button
+    this.color = document.getElementById('stylus-color');      // drawing color
+    this.bgColor = document.getElementById('background-color');// background color
+    this.penWidth = document.getElementById('pen-width');      // pen width
+    this.spiro = document.getElementById('spiro');             // radial selector
+    this.slicer = document.getElementById('divisions');        // radial divisions
 
-
-    this.canvas.width = window.innerWidth - 250;
+    //canvas setting
+    this.canvas.width = window.innerWidth - 250;            
     this.canvas.height = window.innerHeight - 100;
     this.ctx = this.canvas.getContext("2d");
 
