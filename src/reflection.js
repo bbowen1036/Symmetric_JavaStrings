@@ -20,10 +20,6 @@ const derivedPattern = (p) => {
     (yReflect(p)),
   ]
 }
-console.log(
-
-  derivedPattern(p)
-)
 
 // console.log(p);
 // console.log(invert(p));
