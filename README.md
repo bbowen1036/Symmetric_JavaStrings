@@ -2,6 +2,8 @@
 # Symmetric JavaStrings
 Lines are a fundamental element of design. In drawing, they are the main tool of expression. Symmetric JavaStrings is a drawing application that uses radial symmetry and mathematical principles, allowing users to create beautiful designs with minimal effort.
 
+[Live Link](https://bbowen1036.github.io/Symmetric_JavaStrings/)
+
 ![screenshot](assets/img/screenshot.png)
 
 ## Features
