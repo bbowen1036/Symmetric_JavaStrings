@@ -7,8 +7,6 @@
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: top-level-this-exports, module, __webpack_require__.g, __webpack_exports__, __webpack_require__.* */
-/*! CommonJS bailout: this is used directly at 1:154-158 */
-/*! CommonJS bailout: module.exports is used directly at 1:2545-2559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(a,b){if(true)!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (b),
