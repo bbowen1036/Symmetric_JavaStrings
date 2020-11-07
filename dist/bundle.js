@@ -7,8 +7,6 @@
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: top-level-this-exports, module, __webpack_require__.g, __webpack_exports__, __webpack_require__.* */
-/*! CommonJS bailout: this is used directly at 1:154-158 */
-/*! CommonJS bailout: module.exports is used directly at 1:2545-2559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(a,b){if(true)!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (b),
@@ -268,8 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
+ 
 document.addEventListener("DOMContentLoaded", function(){
   
   let save = document.getElementById('saveing')
@@ -282,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function(){
   })
 
   ;(0,_wacky_header__WEBPACK_IMPORTED_MODULE_1__.wackyHeader)()
-  ;(0,_sidebar__WEBPACK_IMPORTED_MODULE_0__.SidebarMenu)();
+  ;(0,_sidebar__WEBPACK_IMPORTED_MODULE_0__.sidebarMenu)();
   const canvas = new _canvas__WEBPACK_IMPORTED_MODULE_3__.default();
 });
 
@@ -293,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function(){
   !*** ./src/sidebar.js ***!
   \************************/
 /*! namespace exports */
-/*! export SidebarMenu [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export sidebarMenu [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -301,10 +298,10 @@ document.addEventListener("DOMContentLoaded", function(){
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "SidebarMenu": () => /* binding */ SidebarMenu
+/* harmony export */   "sidebarMenu": () => /* binding */ sidebarMenu
 /* harmony export */ });
 
-const SidebarMenu = () => {
+const sidebarMenu = () => {
   let openBtn = document.getElementById('open-sidebar');
   let sunflowerMode = document.getElementById('spiro')
   

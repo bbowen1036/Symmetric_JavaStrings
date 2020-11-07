@@ -19,6 +19,8 @@
 
 </head>
 <body>
+ 
+
   <div class="navbar" id="wacky-header"> 
 
     <!-- cool git -->
@@ -38,8 +40,8 @@
         <a href="#"><img src="https://fontmeme.com/permalink/201105/01fe81b35a140cce6a3de68e47a64e2a.png" alt="ambigram-font" border="0"></a>
       </div>
   
-      <div class="instructions">
-           
+      <div id="about" >
+        <button id="modalBtn" class="button">About</button>
       </div>
     </div>
 
@@ -103,13 +105,38 @@
                   </a>
  
           </div>
-      </div>
 
+          <div>
+            &#169;  Brian Bowen 2020
+          </div>
+      </div>
   </section>
 
-  <div class="canvas-container" >
-    <canvas id="canvas"></canvas>
-  </div>
 
-</body>
+  
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn">&times;</span>
+            <h2>Welcome to Symmetric JavaStrings!</h2>
+            <div>
+              <p>
+                A drawing application where you can create fun colorful designs!
+                There is Toolbar on the left to choose your colors.
+                <br>
+                (hold gown the SHIFT key for highlighter mode)
+                <br>
+                <br>
+                <h3 class="begin">Click the Canvas to begin drawing!</h3>
+               </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="canvas-container" >
+      <canvas id="canvas"></canvas>
+    </div>
+    
+    <script src="./src/modal.js"></script>
+  </body>
 </html>

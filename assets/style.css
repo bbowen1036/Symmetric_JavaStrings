@@ -65,3 +65,54 @@ button {
 }
 
 
+
+
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%; 
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  
+}
+
+.modal-content{ 
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  line-height: 31px;
+  border-radius: 5px;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#closeBtn {
+  /* position: relative; */
+  top: 2px;
+  color: #ccc;
+  float: right;
+  font-size: 60px; 
+}
+
+.modal-content h2 {
+  margin-top: 19px;
+  margin-bottom: 12px;
+}
+
+.begin {
+  font-weight: 800;
+}
+
+
+#closeBtn:hover, #closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

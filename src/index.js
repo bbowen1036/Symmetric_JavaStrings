@@ -1,9 +1,8 @@
-import {SidebarMenu} from './sidebar';
+import { sidebarMenu } from './sidebar';
 import { wackyHeader } from './wacky_header';
 import { saveAs } from 'file-saver';
 import Canvas from './canvas';
-
-
+ 
 document.addEventListener("DOMContentLoaded", function(){
   
   let save = document.getElementById('saveing')
@@ -16,6 +15,6 @@ document.addEventListener("DOMContentLoaded", function(){
   })
 
   wackyHeader()
-  SidebarMenu();
+  sidebarMenu();
   const canvas = new Canvas();
 });

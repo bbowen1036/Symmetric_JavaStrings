@@ -1,5 +1,5 @@
 
-export const SidebarMenu = () => {
+export const sidebarMenu = () => {
   let openBtn = document.getElementById('open-sidebar');
   let sunflowerMode = document.getElementById('spiro')
   
